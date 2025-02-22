@@ -1,0 +1,10 @@
+1.
+Stack: Not shared each process has its own stack
+Heap: Not shared the memory is copied making it so a change in one does not affect the other
+Shared Memory Segments: Shared, this is the only shared part of a fork allowing for a inter process communication
+2.
+Both IOS and android have well maintained concurrent processing. 
+IOS uses Grand Central Dispatch (GCD) and NSOperationQueue for efficient task management, while Android relies on Java Threads, Kotlin Coroutines, 
+and AsyncTask to handle background operations without blocking the main thread.
+This concurrency introduces challenges like race conditions where threads access shared resources. Deadlocks occur when 2 or more threads are waiting on each other’s resources infinitely.
+Resource starvation is when a process is neglected and not given enough CPU time.
